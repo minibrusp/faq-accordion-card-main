@@ -182,3 +182,43 @@ footer {
    color: hsl(227, 53%, 16%); 
    text-decoration: none;
 }
+
+@media (max-width: 21.25em) {
+   .card {
+      max-width: 18.4375rem;
+      min-width: 15.4375rem;
+   }
+   .card__image img {
+      left: -1.1875rem;
+   }
+
+   .card__image::before {
+      left: 0.46875rem;
+   }
+}
+
+@media (max-width: 19.6875em) {
+   .card {
+      padding: 6.3125rem 1.2rem;
+      margin: 5.25rem auto 0 auto;
+      max-width: 12.4375rem;
+      min-width: 5.4375rem;
+   }
+
+   .card__image img {
+      top: -10.8rem;
+      left: -1.1875rem;
+      width: 11rem;
+   }
+
+   .card__image::before {
+      width: 9.5rem;
+      height: 4.125rem;
+      top: -6.125rem;
+      left: 0.26875rem;
+   }
+
+   .accordion__answer {
+      text-align: center;
+   }
+}
