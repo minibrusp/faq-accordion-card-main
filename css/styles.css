@@ -235,15 +235,22 @@ footer {
 
 @media (min-width: 43.75em) {
 
+   body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
    img.box {
       display: block;
       position: absolute;
       z-index: 2;
-      left: -50px;
+      left: -3.125rem;
       width: 16%;
-      max-width: 140px;
-      max-height: 135px;
-      top: 128px;
+      max-width: 8.75rem;
+      max-height: 8.4375rem;
+      top: 12.3125rem;
    }
 
    .card {
@@ -255,7 +262,8 @@ footer {
       background-image: url(../images/bg-pattern-desktop.svg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: -395px -213px;
+      background-position: -24.6875rem -9.5625rem;
+      margin-top: 5rem;
    }
 
    .card__image__container {
@@ -283,8 +291,8 @@ footer {
       display: block;
       width: 160%;
       position: relative;
-      left: -55px;
-      top: 0;
+      left: -3.4375rem;
+      top: 3.9375rem;
       
    }
 
@@ -296,4 +304,34 @@ footer {
       text-align: left;
    }
 
+}
+
+@media (min-width: 56.25em) {
+
+   img.box {
+      top: 15.3125rem;
+      left: -4.125rem;
+   }
+
+   .card {
+      max-width: 53.4375rem;
+      padding: 4.3125rem 4.125rem 4.3125rem 0;
+      background-position: -32.6875rem -13.5625rem;
+   }
+
+   .card__image {
+      margin-right: 10.375rem;
+      width: 70%;
+      height: 360px;
+   }
+
+   .card__image img:nth-of-type(2) {
+      width: 166%;
+      left: -4.4375rem;
+      top: 2.9375rem;
+   }
+
+   .card__text {
+      margin-left: 5rem;
+   }
 }
