@@ -308,6 +308,10 @@ footer {
 
 @media (min-width: 56.25em) {
 
+   body {
+      height: unset;
+   }
+
    img.box {
       top: 15.3125rem;
       left: -4.125rem;
