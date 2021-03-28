@@ -263,7 +263,7 @@ footer {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: -24.6875rem -10.5625rem;
-      margin-top: 5rem;
+      margin-top: 3rem;
    }
 
    .card__image__container {
@@ -333,5 +333,35 @@ footer {
 
    .card__text {
       margin-left: 5rem;
+   }
+}
+
+@media (min-width: 75rem) {
+
+   img.box {
+      max-width: 12.75rem;
+      max-height: 12.75rem;
+      top: 14.5125rem;
+      left: -91px;
+   }
+
+   .card {
+      max-width: 65.4375rem;
+      padding: 4.3125rem 6.125rem 4.3125rem 0;
+      background-position: -36.6875rem -19.5625rem;
+   }
+
+   .card__image {
+      height: 425px;
+      margin-right: 30.375rem;
+   }
+
+   .card__image img:nth-of-type(2) {
+      left: -5.4375rem;
+      width: 530px;
+   }
+
+   .card__text {
+      margin-left: 0;
    }
 }
