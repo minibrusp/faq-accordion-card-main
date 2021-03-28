@@ -246,11 +246,11 @@ footer {
       display: block;
       position: absolute;
       z-index: 2;
-      left: -3.125rem;
-      width: 16%;
+      left: -3.5rem;
+      width: 18%;
       max-width: 8.75rem;
       max-height: 8.4375rem;
-      top: 12.3125rem;
+      top: 10.875rem;
    }
 
    .card {
@@ -262,7 +262,7 @@ footer {
       background-image: url(../images/bg-pattern-desktop.svg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: -24.6875rem -9.5625rem;
+      background-position: -24.6875rem -10.5625rem;
       margin-top: 5rem;
    }
 
@@ -292,7 +292,7 @@ footer {
       width: 160%;
       position: relative;
       left: -3.4375rem;
-      top: 3.9375rem;
+      top: 2.9375rem;
       
    }
 
@@ -308,19 +308,15 @@ footer {
 
 @media (min-width: 56.25em) {
 
-   body {
-      height: unset;
-   }
-
    img.box {
-      top: 15.3125rem;
+      top: 12.3125rem;
       left: -4.125rem;
    }
 
    .card {
       max-width: 53.4375rem;
       padding: 4.3125rem 4.125rem 4.3125rem 0;
-      background-position: -32.6875rem -13.5625rem;
+      background-position: -32.6875rem -16.5625rem;
    }
 
    .card__image {
@@ -332,7 +328,7 @@ footer {
    .card__image img:nth-of-type(2) {
       width: 166%;
       left: -4.4375rem;
-      top: 2.9375rem;
+      top: -0.0625rem;
    }
 
    .card__text {
