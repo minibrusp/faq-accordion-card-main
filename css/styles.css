@@ -120,12 +120,17 @@ img.box {
    color: var(--text-SR);
 }
 
-.accordion__question:focus {
+.accordion__question__show {
    font-weight: 700;
    color: var(--text-VDGB)
 }
 
-.accordion__question:focus~.accordion__collapse {
+/* .accordion__question:focus {
+   font-weight: 700;
+   color: var(--text-VDGB)
+} */
+
+/* .accordion__question:focus~.accordion__collapse {
    display: block;
    height: 70px;
    opacity: 1;
@@ -133,6 +138,26 @@ img.box {
    transition: height 1s,
                opacity 1s,
                margin 1s;
+} */
+
+.accordion__collapse {
+   height: 0;
+   overflow: hidden;
+   opacity: 0;
+   margin: 0;
+   transition: height 1s,
+      opacity 1s,
+      margin 1s;
+}
+
+.accordion__collapse__show {
+   display: block;
+   height: 70px;
+   opacity: 1;
+   margin: auto;
+   transition: height 1s,
+      opacity 1s,
+      margin 1s;
 }
 
 .accordion__question::after {
@@ -145,21 +170,15 @@ img.box {
    transition: transform 1s;
 }
 
-.accordion__question:focus:after {
+.accordion__question__show:after {
    transform: rotate(540deg);
    transition: transform 1s;
 }
 
-.accordion__collapse {
-   /* display: none; */
-   height: 0;
-   overflow: hidden;
-   opacity: 0;
-   margin: 0;
-   transition: height 1s,
-   opacity 1s,
-   margin 1s;
-}
+/* .accordion__question:focus:after {
+   transform: rotate(540deg);
+   transition: transform 1s;
+} */
 
 .accordion__answer {
    margin-top: 1.1875rem;
@@ -170,24 +189,22 @@ img.box {
 /* Footer  */
 
 footer {
-   /* position: absolute; */
-   /* bottom: 0.0625rem; */
    margin-top: 1rem;
    width: 100%;
 }
 
-.attribution { 
-   font-size: 11px; 
-   text-align: center; 
+.attribution {
+   font-size: 11px;
+   text-align: center;
 }
 
-.attribution a { 
-   color: hsl(228, 45%, 44%); 
+.attribution a {
+   color: hsl(228, 45%, 44%);
    text-decoration: underline;
 }
 
-.attribution a:hover { 
-   color: hsl(227, 53%, 16%); 
+.attribution a:hover {
+   color: hsl(227, 53%, 16%);
    text-decoration: none;
 }
 
@@ -198,6 +215,7 @@ footer {
       max-width: 18.4375rem;
       min-width: 15.4375rem;
    }
+
    .card__image img {
       left: -1.1875rem;
    }
@@ -293,7 +311,7 @@ footer {
       position: relative;
       left: -3.4375rem;
       top: 2.9375rem;
-      
+
    }
 
    .card__text {
